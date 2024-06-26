@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUniversity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Detail University Data" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemi"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="University Id :"/>
+    <EditText
+        android:id="@+id/addId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="200dp"
+        android:hint="Enter University Id"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addId"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemi"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="University Name :"/>
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="200dp"
+        android:hint="Enter University Name"/>
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addName"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemi"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="Alamat Kampus :"/>
+    <EditText
+        android:id="@+id/addAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title3"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="200dp"
+        android:hint="Enter University Address"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/title3"
+        android:layout_marginLeft="110dp"
+        android:layout_below="@+id/addId"
+        android:background="@drawable/radius_formprimary"
+        android:fontFamily="@font/poppins"
+        android:text="Update"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/title3"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btnUpdate"
+        android:background="@drawable/radius_formprimary"
+        android:fontFamily="@font/poppins"
+        android:text="Delete"
+        android:textColor="@color/white" />
+
+
+
+
+</RelativeLayout>
